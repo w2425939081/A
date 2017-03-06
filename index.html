@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>米课</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<!-- header stasrt -->
+	<header class="header">
+		<div class="header-content">
+			<div class="logo">
+				<img src="images/imiker_logo.png" alt="">
+			</div>
+			<ul class="navlist">
+				<li><a href="#">入学必读</a></li>
+				<li><a id="zhankai" >全部课程</a></li>
+				<li><a href="#">米问社区</a></li>
+			</ul>
+			<div class="loginRegister">
+				<a href="#" class="login">登录</a>
+				<a href="#" class="register">注册试听</a>
+			</div>
+		</div>
+		<div class="lesson">
+			<div class="main">
+				<ul>
+					<li><a href="#" class="mrhua">Mr.Hua主讲<br><span>815节课</span></a></li>
+					<li><a href="#" class="ice">毅冰主讲<br><span>428节课</span></a></li>
+					<li><a href="#" class="sam">料神主讲<br><span>231节课</span></a></li>
+					<li><a href="#" class="gushi">张曦主讲<br><span>168节课</span></a></li>
+					<li><a href="#" class="fangchan">暗夜主讲<br><span>168节课</span></a></li>
+					<li><a href="#" class="b2c">老鹰团队<br><span>209节课</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</header><!-- header stop -->
+	
+	<!-- banner start -->
+	<section class="banner">
+		<div class="main">
+			<div class="main-left">
+				<dl>
+					<dt>
+						<img src="images/wmkc.png" alt="">
+					</dt>
+					<dd class="icon-imiker"><a href="#">核心课程-Mr.Hua主讲</a></dd>
+					<dd class="icon-ice"><a href="#">转换询盘-毅冰主讲</a></dd>
+					<dd class="icon-sam"><a href="#">快速出单-料神主讲</a></dd>
+				</dl>
+				<dl>
+					<dt>
+						<img src="images/tzkc.png" alt="">
+					</dt>
+					<dd class="icon-cx"><a href="#">证券投资-张曦主讲</a></dd>
+				</dl>
+				<dl>
+					<dt>
+						<img src="images/zykc.png" alt="">
+					</dt>
+					<dd class="icon-fc"><a href="#">房地产投资-暗夜主讲</a></dd>
+				</dl>
+				<dl>
+					<dt>
+						<img src="images/kjkc.png" alt="">
+					</dt>
+					<dd class="icon-trade"><a href="#">跨境电商-老鹰团队</a></dd>
+				</dl>
+			</div>
+			<div class="main-right">
+				<div class="pic"></div>
+				<a class="video1" href="#"></a>
+			</div>
+		</div>
+		<div class="bottom">
+			<div class="bottom-main">
+				一个试听账户，体验米课旗下所有老师课程+学员社区。
+				<a href="#">现在注册</a>
+			</div>
+		</div>
+	</section><!-- banner stop -->
+	
+	<!-- index-bottom start -->
+	<div class="index-bottom">
+		<h2>米课迈入第五年，3.5万名付费学员</h2>
+		<p>2016米课迈入了他第五个年头，过去5年<a href="#"><i class="icon-font"></i>Mr.Hua</a>，<a href="#"><i class="icon-font"></i>毅冰</a>，<a href="#"><i class="icon-font"></i>料神</a>,三位老师带领着外贸人拿询盘，接订单，未来5年我们的<a href="#"><i class="icon-font"></i>暗夜</a>，<a href="#"><i class="icon-font"></i>张曦</a>老师要带领大家正确的投资和置业，我们不但要辛勤的工作，还要学会聪明的投资我们的现金流。</p>
+	</div><!-- index stop -->
+	
+	<!-- footer start -->
+	<footer class="footer">
+		<ul>
+			<li><a href="#">学院社区</a></li>
+			<li>|</li>
+			<li><a href="#">米课团队</a></li>
+			<li>|</li>
+			<li><a href="#">找米课合作</a></li>
+			<li>|</li>
+			<li><a href="#">入学必读</a></li>
+		</ul>
+		<p>© 2016南京米课网络信息技术有限公司 版权所有 苏ICP备12015496号</p>
+	</footer><!-- footer stop -->
+
+	<!-- video-container start -->
+	<div class="video-container">
+		<div class="zezhao"></div>
+		<div class="video-box">
+			<h3 class="title-bar">1分钟了解米课三元概念<a href="#"><i id="close" class="icon-font"></i></a></h3>
+			<div class="main">
+				<video id="video-body" video-state="0" width="100%" height="100%">
+					<source type="video/mp4" src="images/index.mp4">
+				</video>
+				<div class="playg"></div>
+				<div class="btn">
+					<div class="pure-start"></div>
+					<div class="progress-bar"></div>
+					<div class="sound-size">
+						<div class="horn"></div>
+					</div>
+					<div class="screen"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- video-container stop -->
+
+	<!-- online start -->
+	<div class="online"><a href="#"><img src="images/zx.png" alt=""></a></div>
+
+<script src="js/jquery-3.1.0.min.js"></script>
+<script>
+	$(function(){
+
+		$('#zhankai').click(function(event) {
+			/* Act on the event */
+			$('.lesson').toggleClass('lesson-zhankai');
+		});
+
+		// 打开视屏
+		$('.video1').click(function() {
+			/* Act on the event */
+			$('.video-container').css({
+				display: 'block'
+			});
+		});
+
+		//关闭视频
+		$('#close').click(function() {
+			/* Act on the event */
+			$('.video-container').css({
+				display: 'none'
+			});
+		});
+
+		//播放视频
+		var tvideo = $('#video-body');	//视频
+		var tplay = $('.playg');	//大播放按钮
+		var tplaym = $('.pure-start') //小播放按钮
+
+		//点击大的播放视频
+		tplay.click(function() {
+			tvideo[0].play();
+			tplay.css("display","none");
+			tplaym.addClass('pure-start-play');
+			tvideo.attr("video-state","1");
+		});
+
+		//
+		tplaym.click(function() {
+			/* Act on the event */
+			var flag = tvideo.attr('video-state');
+			if(flag==1){
+				tplaym.removeClass('pure-start-play');
+				tplay.css("display","block");
+				tvideo[0].pause();
+				tvideo.attr("video-state","0");
+			}
+			else{
+				tvideo[0].play();
+				tplay.css("display","none");
+				tplaym.addClass('pure-start-play');
+				tvideo.attr("video-state","1");
+			}
+		});
+	});
+</script>
+</body>
+</html>
